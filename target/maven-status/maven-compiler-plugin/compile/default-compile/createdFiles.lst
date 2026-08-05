@@ -1,0 +1,9 @@
+com\auca\library\domain\enums\Gender.class
+com\auca\library\domain\User.class
+com\auca\library\domain\enums\Role.class
+com\auca\library\domain\Location.class
+com\auca\library\domain\Person.class
+com\auca\library\domain\enums\LocationType.class
+com\auca\library\domain\enums\BookStatus.class
+com\auca\library\domain\enums\MembershipStatus.class
+com\auca\library\App.class
