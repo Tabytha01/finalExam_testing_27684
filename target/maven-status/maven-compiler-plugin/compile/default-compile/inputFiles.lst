@@ -22,7 +22,7 @@ C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\a
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\domain\Shelf.java
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\domain\User.java
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\exception\ActiveMembershipExistsException.java
-C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\exception\BorrowLimitException.java
+C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\exception\BorrowLimitExceededException.java
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\exception\DuplicateLocationCodeException.java
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\service\BookService.java
 C:\Users\kunda\OneDrive\Documents\Testing final exam\library\src\main\java\com\auca\library\service\BorrowingService.java
