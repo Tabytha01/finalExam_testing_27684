@@ -1,5 +1,8 @@
 package com.auca.library.exception;
 
-public class ActiveMembershipExistsException {
+public class ActiveMembershipExistsException extends RuntimeException {
+    public ActiveMembershipExistsException(String message) {
+        super(message);
+    }
     
 }

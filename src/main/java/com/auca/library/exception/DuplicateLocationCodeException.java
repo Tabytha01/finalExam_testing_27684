@@ -1,5 +1,8 @@
 package com.auca.library.exception;
 
-public DuplicateLocationCodeException {
+public class DuplicateLocationCodeException extends RuntimeException {
+    public DuplicateLocationCodeException(String message) {
+        super(message);
+    }
     
 }
