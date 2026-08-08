@@ -1,0 +1,6674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.auca.library.BorrowingServiceTest" time="5.033" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\kunda\OneDrive\Documents\Testing final exam\library\target\test-classes;C:\Users\kunda\OneDrive\Documents\Testing final exam\library\target\classes;C:\Users\kunda\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\kunda\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\kunda\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\kunda\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\kunda\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\kunda\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\kunda\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\kunda\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\kunda\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\kunda\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\kunda\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\kunda\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\kunda\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\kunda\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\kunda\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\kunda\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\kunda\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunda\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Kigali"/>
+    <property name="user.country.format" value="RW"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\kunda\AppData\Local\Temp\surefire13154394083325992075\surefirebooter-20260808021633366_3.jar C:\Users\kunda\AppData\Local\Temp\surefire13154394083325992075 2026-08-08T02-16-30_662-jvmRun1 surefire-20260808021633366_1tmp surefire_0-20260808021633366_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\kunda\OneDrive\Documents\Testing final exam\library\target\test-classes;C:\Users\kunda\OneDrive\Documents\Testing final exam\library\target\classes;C:\Users\kunda\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\kunda\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\kunda\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\kunda\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\kunda\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\kunda\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\kunda\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\kunda\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\kunda\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\kunda\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\kunda\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\kunda\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\kunda\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\kunda\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\kunda\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\kunda\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\kunda\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\kunda\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\kunda\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kunda"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\kunda\OneDrive\Documents\Testing final exam\library"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\kunda\AppData\Local\Temp\surefire13154394083325992075\surefirebooter-20260808021633366_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.2+12-54"/>
+    <property name="user.name" value="kunda"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\kunda\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kunda\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.2"/>
+    <property name="user.dir" value="C:\Users\kunda\OneDrive\Documents\Testing final exam\library"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\kunda\product\21c\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\kunda\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\kunda\AppData\Local\Programs\Python\Python313\;C:\Users\kunda\AppData\Local\Programs\Python\Launcher\;C:\Users\kunda\AppData\Local\Microsoft\WindowsApps;C:\Users\kunda\AppData\Roaming\npm;C:\Users\kunda\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kunda\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\kunda;C:\terraform;C:\terraform;C:\Program Files\Oracle\VirtualBox;C:\Program Files\Oracle\VirtualBox;C:\Users\kunda\Downloads\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Program Files\Java\jdk-24\bin;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\kunda\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\kunda\product\21c\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\kunda\product\21c\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\kunda\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\kunda\AppData\Local\Programs\Python\Python313\;C:\Users\kunda\AppData\Local\Programs\Python\Launcher\;C:\Users\kunda\AppData\Local\Microsoft\WindowsApps;C:\Users\kunda\AppData\Roaming\npm;C:\Users\kunda\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kunda\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\kunda;C:\terraform;C:\terraform;C:\Users\kunda\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool;c:\Users\kunda\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.2+12-54"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="goldMember_returnedThreeDaysLate_feeIs150" classname="com.auca.library.BorrowingServiceTest" time="4.158">
+    <system-out><![CDATA[Hibernate: 
+    create table books (
+        book_id uuid not null,
+        bookStatus varchar(255) check (bookStatus in ('BORROWED','AVAILABLE','RESERVED')),
+        edition integer not null,
+        isbnCode varchar(255),
+        publicationYear date,
+        publisherName varchar(255),
+        shelf_id uuid,
+        title varchar(255),
+        primary key (book_id)
+    )
+Hibernate: 
+    create table borrowers (
+        borrow_id uuid not null,
+        book_id uuid,
+        dueDate date,
+        fine integer not null,
+        lateChargeFees integer not null,
+        pickupDate date,
+        reader_id uuid,
+        returnDate date,
+        primary key (borrow_id)
+    )
+Hibernate: 
+    create table locations (
+        location_id uuid not null,
+        locationCode varchar(255),
+        locationName varchar(255),
+        locationType varchar(255) check (locationType in ('PROVINCE','DISTRICT','SECTOR','CELL','VILLAGE')),
+        parent_id uuid,
+        primary key (location_id)
+    )
+Hibernate: 
+    create table membership_types (
+        membership_type_id uuid not null,
+        maxBooks integer not null,
+        membershipName varchar(255),
+        price integer not null,
+        primary key (membership_type_id)
+    )
+Hibernate: 
+    create table memberships (
+        membership_id uuid not null,
+        expiringTime date,
+        membershipCode varchar(255),
+        membershipStatus varchar(255) check (membershipStatus in ('APPROVED','REJECTED','PENDING')),
+        membership_type_id uuid,
+        reader_id uuid,
+        registrationDate date,
+        primary key (membership_id)
+    )
+Hibernate: 
+    create table rooms (
+        room_id uuid not null,
+        roomCode varchar(255),
+        primary key (room_id)
+    )
+Hibernate: 
+    create table shelves (
+        shelf_id uuid not null,
+        availableStock integer not null,
+        bookCategory varchar(255),
+        borrowedNumber integer not null,
+        initialStock integer not null,
+        room_id uuid,
+        primary key (shelf_id)
+    )
+Hibernate: 
+    create table users (
+        person_id uuid not null,
+        firstName varchar(255),
+        gender varchar(255) check (gender in ('MALE','FEMALE')),
+        lastName varchar(255),
+        phoneNumber varchar(255),
+        password varchar(255),
+        role varchar(255) check (role in ('STUDENT','TEACHER','MANAGER','DEAN','LIBRARIAN','HOD')),
+        userName varchar(255),
+        village_id uuid,
+        primary key (person_id)
+    )
+Hibernate: 
+    alter table if exists books 
+       drop constraint if exists UKcrfmkxwlovfy09qt3yv62u7vo
+Hibernate: 
+    alter table if exists books 
+       add constraint UKcrfmkxwlovfy09qt3yv62u7vo unique (isbnCode)
+Hibernate: 
+    alter table if exists locations 
+       drop constraint if exists UK1jbplhij51jjsmqifdpty49m8
+Hibernate: 
+    alter table if exists locations 
+       add constraint UK1jbplhij51jjsmqifdpty49m8 unique (locationCode)
+Hibernate: 
+    alter table if exists memberships 
+       drop constraint if exists UKem4183tgc45drq9d00twiq3vx
+Hibernate: 
+    alter table if exists memberships 
+       add constraint UKem4183tgc45drq9d00twiq3vx unique (membershipCode)
+Hibernate: 
+    alter table if exists rooms 
+       drop constraint if exists UK82d187xrq1oo3hq0iod8tm1up
+Hibernate: 
+    alter table if exists rooms 
+       add constraint UK82d187xrq1oo3hq0iod8tm1up unique (roomCode)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UKmmns67o5v4bfippoqitu4v3t6
+Hibernate: 
+    alter table if exists users 
+       add constraint UKmmns67o5v4bfippoqitu4v3t6 unique (userName)
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        membership_types
+        (maxBooks, membershipName, price, membership_type_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        membership_types
+        (maxBooks, membershipName, price, membership_type_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        membership_types
+        (maxBooks, membershipName, price, membership_type_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    update
+        borrowers 
+    set
+        book_id=?,
+        dueDate=?,
+        fine=?,
+        lateChargeFees=?,
+        pickupDate=?,
+        reader_id=?,
+        returnDate=? 
+    where
+        borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+    <system-err><![CDATA[Aug 08, 2026 2:16:34 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.5.2.Final
+Aug 08, 2026 2:16:35 AM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/auca_library_db]
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=postgres, password=****}
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Aug 08, 2026 2:16:35 AM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Aug 08, 2026 2:16:37 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@11f23038] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: SQL Warning Code: 0, SQLState: 00000
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: constraint "ukcrfmkxwlovfy09qt3yv62u7vo" of relation "books" does not exist, skipping
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: SQL Warning Code: 0, SQLState: 00000
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: constraint "uk1jbplhij51jjsmqifdpty49m8" of relation "locations" does not exist, skipping
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: SQL Warning Code: 0, SQLState: 00000
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: constraint "ukem4183tgc45drq9d00twiq3vx" of relation "memberships" does not exist, skipping
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: SQL Warning Code: 0, SQLState: 00000
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: constraint "uk82d187xrq1oo3hq0iod8tm1up" of relation "rooms" does not exist, skipping
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: SQL Warning Code: 0, SQLState: 00000
+Aug 08, 2026 2:16:37 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler logWarning
+WARN: constraint "ukmmns67o5v4bfippoqitu4v3t6" of relation "users" does not exist, skipping
+]]></system-err>
+  </testcase>
+  <testcase name="striverMember_withTwoActiveBorrows_isBlocked" classname="com.auca.library.BorrowingServiceTest" time="0.128">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="goldMember_withFiveActiveBorrows_cannotBorrowASixth" classname="com.auca.library.BorrowingServiceTest" time="0.122">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="borrowBook_dueDateIsPickupDatePlusLoanPeriod" classname="com.auca.library.BorrowingServiceTest" time="0.063">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="silverMember_returnedFiveDaysLate_feeIs150" classname="com.auca.library.BorrowingServiceTest" time="0.067">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    update
+        borrowers 
+    set
+        book_id=?,
+        dueDate=?,
+        fine=?,
+        lateChargeFees=?,
+        pickupDate=?,
+        reader_id=?,
+        returnDate=? 
+    where
+        borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="borrowBook_availableBook_createsBorrowerRecordWithZeroFine" classname="com.auca.library.BorrowingServiceTest" time="0.082">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="goldMember_withFourActiveBorrows_canBorrowAFifth" classname="com.auca.library.BorrowingServiceTest" time="0.093">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="returnedOnDueDate_feeIsZero" classname="com.auca.library.BorrowingServiceTest" time="0.052">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    update
+        borrowers 
+    set
+        book_id=?,
+        dueDate=?,
+        fine=?,
+        lateChargeFees=?,
+        pickupDate=?,
+        reader_id=?,
+        returnDate=? 
+    where
+        borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="silverMember_withThreeActiveBorrows_isBlocked" classname="com.auca.library.BorrowingServiceTest" time="0.078">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="notYetReturned_feeIsComputedAgainstToday" classname="com.auca.library.BorrowingServiceTest" time="0.043">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    update
+        borrowers 
+    set
+        book_id=?,
+        dueDate=?,
+        fine=?,
+        lateChargeFees=?,
+        pickupDate=?,
+        reader_id=?,
+        returnDate=? 
+    where
+        borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="striverMember_returnedOneDayLate_feeIs10" classname="com.auca.library.BorrowingServiceTest" time="0.048">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    update
+        borrowers 
+    set
+        book_id=?,
+        dueDate=?,
+        fine=?,
+        lateChargeFees=?,
+        pickupDate=?,
+        reader_id=?,
+        returnDate=? 
+    where
+        borrow_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.borrow_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        borrowers 
+    where
+        borrow_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="borrowBook_setsBookStatusToBorrowed" classname="com.auca.library.BorrowingServiceTest" time="0.044">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membership_type_id=?
+Hibernate: 
+    select
+        b1_0.borrow_id,
+        b1_0.book_id,
+        b1_0.dueDate,
+        b1_0.fine,
+        b1_0.lateChargeFees,
+        b1_0.pickupDate,
+        b1_0.reader_id,
+        b1_0.returnDate 
+    from
+        borrowers b1_0 
+    where
+        b1_0.reader_id=? 
+        and b1_0.returnDate is null
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    insert 
+    into
+        borrowers
+        (book_id, dueDate, fine, lateChargeFees, pickupDate, reader_id, returnDate, borrow_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    update
+        books 
+    set
+        bookStatus=?,
+        edition=?,
+        isbnCode=?,
+        publicationYear=?,
+        publisherName=?,
+        shelf_id=?,
+        title=? 
+    where
+        book_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    update
+        shelves 
+    set
+        availableStock=?,
+        bookCategory=?,
+        borrowedNumber=?,
+        initialStock=?,
+        room_id=? 
+    where
+        shelf_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="userWithoutApprovedMembership_isBlocked" classname="com.auca.library.BorrowingServiceTest" time="0.037">
+    <system-out><![CDATA[Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    select
+        mt1_0.membership_type_id,
+        mt1_0.maxBooks,
+        mt1_0.membershipName,
+        mt1_0.price 
+    from
+        membership_types mt1_0 
+    where
+        mt1_0.membershipName=?
+Hibernate: 
+    insert 
+    into
+        shelves
+        (availableStock, bookCategory, borrowedNumber, initialStock, room_id, shelf_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        memberships
+        (expiringTime, membershipCode, membershipStatus, membership_type_id, reader_id, registrationDate, membership_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (firstName, gender, lastName, password, phoneNumber, role, userName, village_id, person_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        books
+        (bookStatus, edition, isbnCode, publicationYear, publisherName, shelf_id, title, book_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.reader_id=? 
+        and m1_0.membershipStatus=?
+Hibernate: 
+    select
+        b1_0.book_id,
+        b1_0.bookStatus,
+        b1_0.edition,
+        b1_0.isbnCode,
+        b1_0.publicationYear,
+        b1_0.publisherName,
+        b1_0.shelf_id,
+        b1_0.title 
+    from
+        books b1_0 
+    where
+        b1_0.book_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        m1_0.membership_id,
+        m1_0.expiringTime,
+        m1_0.membershipCode,
+        m1_0.membershipStatus,
+        m1_0.membership_type_id,
+        m1_0.reader_id,
+        m1_0.registrationDate 
+    from
+        memberships m1_0 
+    where
+        m1_0.membership_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        u1_0.person_id,
+        u1_0.firstName,
+        u1_0.gender,
+        u1_0.lastName,
+        u1_0.password,
+        u1_0.phoneNumber,
+        u1_0.role,
+        u1_0.userName,
+        u1_0.village_id 
+    from
+        users u1_0 
+    where
+        u1_0.person_id=?
+Hibernate: 
+    select
+        s1_0.shelf_id,
+        s1_0.availableStock,
+        s1_0.bookCategory,
+        s1_0.borrowedNumber,
+        s1_0.initialStock,
+        s1_0.room_id 
+    from
+        shelves s1_0 
+    where
+        s1_0.shelf_id=?
+Hibernate: 
+    delete 
+    from
+        books 
+    where
+        book_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        memberships 
+    where
+        membership_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        person_id=?
+Hibernate: 
+    delete 
+    from
+        shelves 
+    where
+        shelf_id=?
+]]></system-out>
+  </testcase>
+</testsuite>

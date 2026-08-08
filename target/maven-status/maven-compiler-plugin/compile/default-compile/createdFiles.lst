@@ -1,6 +1,7 @@
 com\auca\library\dao\BorrowerDao.class
 com\auca\library\domain\Shelf.class
 com\auca\library\domain\User.class
+com\auca\library\Main.class
 com\auca\library\domain\enums\LocationType.class
 com\auca\library\exception\ActiveMembershipExistsException.class
 com\auca\library\domain\enums\MembershipStatus.class
@@ -27,6 +28,7 @@ com\auca\library\domain\Borrower.class
 com\auca\library\domain\Book.class
 com\auca\library\service\LocationService.class
 com\auca\library\domain\Membership.class
+com\auca\library\DataSeeder.class
 com\auca\library\domain\Person.class
 com\auca\library\dao\MembershipTypeDao.class
 com\auca\library\App.class

@@ -1,0 +1,7 @@
+com\auca\library\ShelfServiceTest.class
+com\auca\library\UserServiceTest.class
+com\auca\library\RoomServiceTest.class
+com\auca\library\MembershipServiceTest.class
+com\auca\library\BorrowingServiceTest.class
+com\auca\library\LocationServiceTest.class
+com\auca\library\AppTest.class
